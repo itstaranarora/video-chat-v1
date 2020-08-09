@@ -4,7 +4,7 @@ Video-chat-v1 is a video conference app. You can see, talk and chat with people 
 
 ![IMG](./video-chat.png)
 
-Check out the live demo:
+Check out the live demo: https://video-chat-app-v1.herokuapp.com/
 
 This app is build using NodeJS, Socket.io, and Peerjs(WebRTC)
 
