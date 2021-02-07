@@ -18,6 +18,7 @@
   justify-content: center;
   align-items: center;
   height: 8vh;
+  position: relative;
   width: 100%;
   background-color: var(--main-darklg);
 }
@@ -155,4 +156,36 @@ video {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+}
+
+#showChat {
+  display: none;
+}
+
+.header__back {
+  display: none;
+  position: absolute;
+  font-size: 1.3rem;
+  top: 17px;
+  left: 28px;
+  color: #fff;
+}
+
+@media (max-width: 700px) {
+  .main__right {
+    display: none;
+  }
+  .main__left {
+    width: 100%;
+    flex: 1;
+  }
+
+  video {
+    height: auto;
+    width: 100%;
+  }
+
+  #showChat {
+    display: flex;
+  }
 }
