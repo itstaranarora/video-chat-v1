@@ -1,3 +1,13 @@
+# bHostVideo Meet Now
+
+An application customized by bTeam
+
+#### How it is?
+A Video Chat app build with NodeJS, Express, Peerjs, Socket.io
+
+# Commit rules
+ ### Please, view in COMMIT.md
+
 # Video-chat-v1
 
 Video-chat-v1 is a video chat app that makes it easy to groups up with people you want to meet
@@ -19,5 +29,4 @@ This app is build using NodeJS, Socket.io, and Peerjs(WebRTC)
 
 ### ToDo
 
-- [ ] - Recreate the Front-end with React.
-
+- [ ] - Release v2 stable
