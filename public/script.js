@@ -19,7 +19,7 @@ showChat.addEventListener("click", () => {
   document.querySelector(".header__back").style.display = "block";
 });
 
-const user = prompt("Please enter your name, this name will appear with other people in this meeting");
+const user = prompt("Enter your name to join this meet");
 
 var peer = new Peer(undefined, {
   path: "/peerjs",
@@ -123,7 +123,7 @@ stopVideo.addEventListener("click", () => {
 
 inviteButton.addEventListener("click", (e) => {
   prompt(
-    "This is your invite link, please copy this link and send it to people you want to meet with",
+    "Copy this invite link and send it to people you want to meet with",
     window.location.href
   );
 });
