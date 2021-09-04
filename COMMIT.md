@@ -30,4 +30,5 @@ Committed by *name* in *country*: *text* ~~~
 Please, add this text by Note tag (like <!-- --> in HTML) on the file don't have it: Please view how to commit files on COMMIT.md on the master tree!
 
 ## Only commit by note tag!
+Thanks!
 
