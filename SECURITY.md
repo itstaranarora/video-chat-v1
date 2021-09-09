@@ -2,8 +2,17 @@
 
 ## Supported Versions
 
-This repository is not actively maintained but I try as much as I can to fix all reported vulnerabilities.
+This is the supported version
+
+| Version  | Supported          |
+| -------  | ------------------ |
+| DEV ver2 | :white_check_mark: |
+| DEV ver1 | :x:                |
+| STABLE v1| :white_check_mark: |
+| BETA ver1| :x:                |
 
 ## Reporting a Vulnerability
 
-To report a vulnerability, you can send me an email at amirsanni@gmail.com. Thank you.
+How to report?
+
+Go to https://forms.gle/t1ahCcwNJxWhnFoy5 and fills the form!
