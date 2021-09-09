@@ -1,3 +1,13 @@
+# bHostVideo Meet Now
+
+An application customized by bTeam
+
+#### How it is?
+A Video Chat app build with NodeJS, Express, Peerjs, Socket.io
+
+# Commit rules
+ ### Please, view in COMMIT.md
+
 # Conference Call
 A conference call implementation using WebRTC, Socket.io and Node.js. This demo is ideal for not more than 4 devices.
 
