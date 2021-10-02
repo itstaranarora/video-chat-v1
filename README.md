@@ -1,32 +1,32 @@
-# Conference Call
-A conference call implementation using WebRTC, Socket.io and Node.js. This demo is ideal for not more than 4 devices.
+# bHostVideo Meet Now
 
+An application customized by bTeam
 
-# Getting Started
-- Run `npm ci`
-- `cd src`
-- `node app.js`
+#### How it is?
+A Video Chat app build with NodeJS, Express, Peerjs, Socket.io
 
+# Commit rules
+ ### Please, view in COMMIT.md
 
-# Features
-- Multi-participants
-- Toggling of video stream
-- Toggling of audio stream (mute & unmute)
-- Screen sharing
-- Text chat
-- Mute individual participant
-- Expand participants' stream
-- Screen Recording
-- Video Recording
+# Video-chat-v1
 
- 
-# Demo
-You can test at https://chat.1410inc.xyz.
+Video-chat-v1 is a video chat app that makes it easy to groups up with people you want to meet
 
+![IMG](./video-chat.png)
 
-# Note
-You can create a free xirsys account and use their free ice server. You can replace the one used with your own at `src/assets/js/helpers.js`, function `getIceServer()`. The demo may not work as my xirsys account has been deactivated for reasons best known to them (perhaps the hits were too much) and I am not ready to create a new one. Create yours or look for an alternative.
+Check out the live demo: https://video-chat-app-v1.herokuapp.com/
 
+An article I wrote which explains how I build this: https://bit.ly/3wh0gyR
 
-# Alternative
-If you prefer to use PHP Web socket (Ratchet) instead of socket.io and NodeJS, check out the PHP version [here](https://github.com/amirsanni/conference-call-ratchet).
+This app is build using NodeJS, Socket.io, and Peerjs(WebRTC)
+
+## How to run the project?
+
+1. Clone this repository in your local system.
+2. Open the command prompt from your project directory and run the command `npm start`.
+3. Go to your browser and type `http://127.0.0.1:5000/` in the address bar.
+4. Hurray! That's it.
+
+### ToDo
+
+- [ ] - Release v2 stable
