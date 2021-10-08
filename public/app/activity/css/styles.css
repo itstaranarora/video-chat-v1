@@ -5,7 +5,7 @@
     --status-bar-width: 720px;
     --status-bar-grid-columns: 335px 50px 335px;
     --menu-status-bar-grid-columns: 1fr 1fr;
-    --home-width: 100px;
+    --home-width: 200px;
     --home-cards-grid-column: 50% 50%;
     --app-history-width: 800px;
     --app-history-grid-columns: 1fr 1fr;
@@ -37,7 +37,7 @@ html {
 
 body {
     position: relative;
-    width: 52%;
+    width: 500;
     min-height: 100%;
     margin: 0;
     overflow: hidden;
