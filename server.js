@@ -9,11 +9,11 @@ const io = require("socket.io")(server, {
   }
 });
 const { ExpressPeerServer } = require("peer");
-const peerServer = ExpressPeerServer(server, {
+const opinions = {
   debug: true,
-});
+}
 
-app.use("/peerjs", peerServer);
+app.use("/peerjs", ExpressPeerServer(server, opinions));
 app.use(express.static("public"));
 
 app.get("/", (req, res) => {
@@ -27,7 +27,9 @@ app.get("/:room", (req, res) => {
 io.on("connection", (socket) => {
   socket.on("join-room", (roomId, userId, userName) => {
     socket.join(roomId);
-    socket.to(roomId).broadcast.emit("user-connected", userId);
+    setTimeout(()=>{
+      socket.to(roomId).broadcast.emit("user-connected", userId);
+    }, 1000)
     socket.on("message", (message) => {
       io.to(roomId).emit("createMessage", message, userName);
     });
