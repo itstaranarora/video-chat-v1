@@ -128,13 +128,27 @@ inviteButton.addEventListener("click", (e) => {
   );
 });
 
-socket.on("createMessage", (message, userName) => {
-  messages.innerHTML =
+socket.on("createMessage", (msg, userName) => {
+  /*messages.innerHTML =
     messages.innerHTML +
     `<div class="message">
         <b><i class="far fa-user-circle"></i> <span> ${
           userName === user ? "me" : userName
         }</span> </b>
         <span>${message}</span>
-    </div>`;
+    </div>`;*/
+  var message = document.createElement("div");
+  message.className = "message";
+  var usernameContainer = document.createElement("b");
+  var icon = document.createElement("i");
+  icon.className = "far fa-user-circle";
+  var username = document.createElement("span");
+  username.innerText = (userName === user) ? "me" : userName;
+  usernameContainer.appendChild(icon);
+  usernameContainer.appendChild(username);
+  var messageText = document.createElement("span");
+  messageText.innerText = msg;
+  message.appendChild(usernameContainer);
+  message.appendChild(messageText);
+  messages.appendChild(message);
 });
