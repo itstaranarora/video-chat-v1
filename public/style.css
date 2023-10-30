@@ -159,9 +159,9 @@ video {
   flex-wrap: wrap;
 }
 
-#showChat {
+/* #showChat {
   display: none;
-}
+} */
 
 .header__back {
   display: none;

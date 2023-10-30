@@ -4,6 +4,7 @@ const myVideo = document.createElement("video");
 const showChat = document.querySelector("#showChat");
 const backBtn = document.querySelector(".header__back");
 myVideo.muted = true;
+let isChatExpanded = true;
 
 backBtn.addEventListener("click", () => {
   document.querySelector(".main__left").style.display = "flex";
@@ -13,11 +14,20 @@ backBtn.addEventListener("click", () => {
 });
 
 showChat.addEventListener("click", () => {
-  document.querySelector(".main__right").style.display = "flex";
-  document.querySelector(".main__right").style.flex = "1";
-  document.querySelector(".main__left").style.display = "none";
-  document.querySelector(".header__back").style.display = "block";
+  if (isChatExpanded) {
+    // Contract the chat window
+    document.querySelector(".main__right").style.display = "none";
+    document.querySelector(".main__left").style.flex = "1.3";
+    showChat.innerHTML = '<i class="fas fa-comment"></i>';
+  } else {
+    // Expand the chat window
+    document.querySelector(".main__right").style.display = "flex";
+    document.querySelector(".main__left").style.flex = "0.7";
+    showChat.innerHTML = '<i class="fa fa-comment-slash"></i>';
+  }
+  isChatExpanded = !isChatExpanded; // Toggle the state
 });
+
 
 const user = prompt("Enter your name");
 
