@@ -46,6 +46,7 @@
   align-items: center;
   padding: 1rem;
   background-color: var(--main-dark);
+  overflow-y: scroll;
 }
 
 video {
