@@ -46,6 +46,7 @@
   align-items: center;
   padding: 1rem;
   background-color: var(--main-dark);
+  overflow-y: scroll;
 }
 
 video {
@@ -158,9 +159,9 @@ video {
   flex-wrap: wrap;
 }
 
-#showChat {
+/* #showChat {
   display: none;
-}
+} */
 
 .header__back {
   display: none;
